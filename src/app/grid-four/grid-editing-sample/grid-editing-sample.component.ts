@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import {  Component, OnInit, ViewChild } from '@angular/core';
 import { IgxDialogComponent,
         IgxGridComponent, IgxSummaryResult,
         IgxNumberSummaryOperand,
@@ -33,7 +33,7 @@ class NumberSummary {
     styleUrls: ['./grid-editing-sample.component.scss'],
     templateUrl: './grid-editing-sample.component.html'
 })
-export class GridEditingSampleComponent implements OnInit, AfterViewInit {
+export class GridEditingSampleComponent implements OnInit {
 
     @ViewChild('grid1', { read: IgxGridComponent, static: true })
     public grid1: IgxGridComponent;
@@ -61,11 +61,11 @@ export class GridEditingSampleComponent implements OnInit, AfterViewInit {
         this.locations = LOCATIONS;
     }
 
-    public ngAfterViewInit() {
-        this.customOverlaySettings = {
-            outlet: this.grid1.outlet
-        };
-    }
+    // public ngAfterViewInit() {
+    //     this.customOverlaySettings = {
+    //         outlet: this.grid1.outlet
+    //     };
+    // }
 
     public removeRow(rowIndex) {
        const row = this.grid1.getRowByIndex(rowIndex);
@@ -97,8 +97,8 @@ export class GridEditingSampleComponent implements OnInit, AfterViewInit {
         return  (arr || []).map((e) => e.shop).join(', ');
     }
 
-    public show(args) {
-        const message = `The product: {name: ${args.data.ProductName}, ID ${args.data.ProductID} } has been removed!`;
-        this.toast.show(message);
-    }
+    // public show(args) {
+    //     const message = `The product: {name: ${args.data.ProductName}, ID ${args.data.ProductID} } has been removed!`;
+    //     this.toast.show(message);
+    // }
 }
