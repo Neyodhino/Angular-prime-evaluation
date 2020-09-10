@@ -4,8 +4,8 @@ import { IgxDialogComponent,
         IgxNumberSummaryOperand,
         IgxToastComponent,
         IgxToastPosition } from 'igniteui-angular';
-import { DATA, LOCATIONS } from './data';
-import { Product } from './product';
+import { DATA, LOCATIONS } from '../../data/data';
+import { Product } from '../../core/product';
 
 class NumberSummary {
     public operate(data: any[]): IgxSummaryResult[] {

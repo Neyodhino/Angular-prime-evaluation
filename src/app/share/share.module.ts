@@ -8,7 +8,6 @@ import { 	IgxAvatarModule,
 	IgxProgressBarModule,
 	IgxRippleModule,
   IgxSwitchModule,
-
 	IgxCheckboxModule,
 	IgxDatePickerModule,
 	IgxDialogModule,
