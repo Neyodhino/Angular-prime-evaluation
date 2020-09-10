@@ -1,17 +1,57 @@
-// import { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
+import { 	IgxAvatarModule,
+	IgxBadgeModule,
+	IgxButtonModule,
+	IgxGridModule,
+	IgxIconModule,
+	IgxInputGroupModule,
+	IgxProgressBarModule,
+	IgxRippleModule,
+  IgxSwitchModule,
 
+	IgxCheckboxModule,
+	IgxDatePickerModule,
+	IgxDialogModule,
+	IgxComboModule,
+  IgxToastModule,
 
-// @NgModule ({
-//   declarations: [
-//     IgxPreventDocumentScrollDirective
-//   ],
-//   imports: [
-//     IgxPreventDocumentScrollModule
-//   ],
-//   exports: [
-//     IgxPreventDocumentScrollDirective,
-//     IgxPreventDocumentScrollModule
-//   ]
-// })
+} from 'igniteui-angular';
 
-// export class ShareModule {}
+@NgModule ({
+  declarations: [
+  ],
+  imports: [
+    IgxBadgeModule,
+    IgxButtonModule,
+    IgxGridModule,
+    IgxIconModule,
+    IgxInputGroupModule,
+    IgxProgressBarModule,
+    IgxRippleModule,
+    IgxSwitchModule,
+    IgxAvatarModule,
+    IgxCheckboxModule,
+    IgxDatePickerModule,
+    IgxDialogModule,
+    IgxComboModule,
+    IgxToastModule,
+  ],
+  exports: [
+    IgxBadgeModule,
+    IgxButtonModule,
+    IgxGridModule,
+    IgxIconModule,
+    IgxInputGroupModule,
+    IgxProgressBarModule,
+    IgxRippleModule,
+    IgxSwitchModule,
+    IgxCheckboxModule,
+    IgxDatePickerModule,
+    IgxDialogModule,
+    IgxComboModule,
+    IgxToastModule,
+    IgxAvatarModule,
+  ]
+})
+
+export class ShareModule {}
