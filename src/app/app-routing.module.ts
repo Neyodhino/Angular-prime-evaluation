@@ -9,10 +9,10 @@ import { GridEditingSampleComponent } from './grid-four/grid-editing-sample/grid
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/grid-one'},
-  { path: 'grid-one', component: PagingSampleComponent },
+  { path: 'grid-one', component: GridEditingSampleComponent },
   { path: 'grid-two', component: GridSortingIndicatorsComponent },
   { path: 'grid-three', component: GridCustomFilteringComponent },
-  { path: 'grid-four', component: GridEditingSampleComponent }
+  { path: 'grid-four', component: PagingSampleComponent }
 ];
 
 @NgModule({
